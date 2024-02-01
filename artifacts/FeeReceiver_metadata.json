@@ -1,0 +1,161 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "feePercentage",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "feeRecipient",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newFeeRecipient",
+						"type": "address"
+					}
+				],
+				"name": "setFeeRecipient",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newTokenAddress",
+						"type": "address"
+					}
+				],
+				"name": "setToken",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "token",
+				"outputs": [
+					{
+						"internalType": "contract IERC20",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"FeeReceiver.sol": "FeeReceiver"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0xc6a8ff0ea489379b61faa647490411b80102578440ab9d84e9a957cc12164e70",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0ea104e577e63faea3b69c415637e99e755dcbf64c5833d7140c35a714d6d90c",
+				"dweb:/ipfs/Qmau6x4Ns9XdyynRCNNp3RhLqijJjFm7z5fyZazfYFGYdq"
+			]
+		},
+		"FeeReceiver.sol": {
+			"keccak256": "0x273c34b1c98c7d925d3d85000ba3e59c3209ac6ae2399042c81beb4950a06bf1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://516db44f1598d8e7cd56f02a0eee0959f1ffa9d65dee63df3b3c91d177a8fd23",
+				"dweb:/ipfs/QmP6M5rmM7bwA7rtGkB3nAxXeTMe5iDRuyoSLn3TC7jrsn"
+			]
+		},
+		"Ownable.sol": {
+			"keccak256": "0x25719489834afdf3caa1864658c6f3806d3905494ec1c723edf213489b95b239",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3bbf835c47b46222b1d5013e1c88a8b477f0a0f75a9bbcbbd9cd98cc471aa104",
+				"dweb:/ipfs/QmZXwY2sJbFzhNsXdJi6XnM9MynV9brkG8AXjkCdnJmMnR"
+			]
+		},
+		"Token.sol": {
+			"keccak256": "0xf566cff26bb874ee6b3cb4fd3e8106ef3e5005d943cd57cb88460b218c170c37",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://910f663bbed3eba643826430f2b543fc5c7e704ce1800cbf793a56c9698520bc",
+				"dweb:/ipfs/QmQLMZx6ueGPtoUhRfJiL3nmzSM3rctdzdXcpZBQuncfcc"
+			]
+		}
+	},
+	"version": 1
+}

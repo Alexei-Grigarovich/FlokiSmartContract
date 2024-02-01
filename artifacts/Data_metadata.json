@@ -1,0 +1,117 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_feeCollector",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "feeCollector",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newFeeCollector",
+						"type": "address"
+					}
+				],
+				"name": "setFeeCollector",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Data.sol": "Data"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Data.sol": {
+			"keccak256": "0xbc66642fa14edb9240215cd42154b6e5ed79a0a3e14d7e760fb158f588ca392d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://442d155e4f37970a9bf185ab64b7cbd2a7fc6b07b8cb908789bd7bfb73d816f1",
+				"dweb:/ipfs/QmPKVsQWAKZCBMk9JYRvebYUGTZazwF17ZJyNPUSKKAy6e"
+			]
+		},
+		"Ownable.sol": {
+			"keccak256": "0xd7c941e3579acfbc94f0b1141566cf67bff21cf89ba05536d1907efc240d7d68",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://860b536bf3e12ede29e16ca21e01b5c8e77d623982198fe179877b3b1a87af9f",
+				"dweb:/ipfs/Qmb7MCxwow46gnzv84i3hxW3buZsQSiXQqdicmK5L99637"
+			]
+		}
+	},
+	"version": 1
+}
