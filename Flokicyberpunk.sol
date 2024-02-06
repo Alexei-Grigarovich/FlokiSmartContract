@@ -3,10 +3,11 @@
 pragma solidity ^0.8.20;
 
 import "./Ownable.sol";
+import "./Operable.sol";
 import "./Token.sol";
 import "./FeeReceiver.sol";
 
-contract Flokicyberpunk is Ownable, Token, FeeReceiver
+contract Flokicyberpunk is Ownable, Operable, Token, FeeReceiver
 {
     mapping(address => Player) players;
 
@@ -20,16 +21,18 @@ contract Flokicyberpunk is Ownable, Token, FeeReceiver
     receive() external payable { }
     fallback() external payable { }
 
-    event Payed(address indexed player);
+    event Payed(address indexed player, uint amount);
     event Withdrawn(address indexed player, uint amount);
 
     function pay(uint amount) external 
     {
+        require(!players[msg.sender].isPaid, "You've already paid");
         require(token.transferFrom(msg.sender, address(this), amount));
 
-        transferFee(amount);     
+        players[msg.sender].isPaid = true;
+        transferFee(amount);
 
-        emit Payed(msg.sender);
+        emit Payed(msg.sender, amount);
     }
 
     function withdraw() external 
@@ -47,9 +50,25 @@ contract Flokicyberpunk is Ownable, Token, FeeReceiver
     {
         minimalWithdrawalBalance = value;
     }
+
+    function addBalance(address player, uint amount) public onlyOperator
+    {
+        players[player].balance += amount;
+    }
+
+    function resetPayment(address player) public onlyOperator
+    {
+        players[player].isPaid = false;
+    }
+
+    function balanceOf() public view returns (uint balance)
+    {
+        return players[msg.sender].balance;
+    }
 }
 
 struct Player
 {
     uint balance;
+    bool isPaid;
 }

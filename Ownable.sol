@@ -6,6 +6,8 @@ abstract contract Ownable
 {
     address public owner;
 
+    event OwnerUpdated(address indexed newOwner);
+
     constructor()
     {
         owner = msg.sender;
@@ -17,10 +19,12 @@ abstract contract Ownable
         _;
     }
 
-    function transferOwnership(address newOwner) public onlyOwner
+    function transferOwnership(address newOwner) external onlyOwner
     {
         require(newOwner != address(0), "Incorrect address");
 
         owner = newOwner;
+
+        emit OwnerUpdated(owner);
     }
 }

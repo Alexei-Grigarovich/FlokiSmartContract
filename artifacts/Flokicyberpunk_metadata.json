@@ -53,6 +53,24 @@
 				"type": "fallback"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "player",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "addWithdrawalBalance",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "feePercentage",
 				"outputs": [
@@ -93,6 +111,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "operator",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "owner",
 				"outputs": [
 					{
@@ -121,6 +152,19 @@
 				"inputs": [
 					{
 						"internalType": "address",
+						"name": "player",
+						"type": "address"
+					}
+				],
+				"name": "resetPayment",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
 						"name": "newFeeRecipient",
 						"type": "address"
 					}
@@ -139,6 +183,19 @@
 					}
 				],
 				"name": "setMinimalWithdrawalBalance",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOperator",
+						"type": "address"
+					}
+				],
+				"name": "setOperator",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -238,19 +295,27 @@
 			]
 		},
 		"Flokicyberpunk.sol": {
-			"keccak256": "0xb5137b301ab1949f7a0ac2d2dd5fd7467b15f871bf97ccce8abfb998ad6ed1d1",
+			"keccak256": "0x0bbfa56ccbae5344f617e83ef7a40fc7f70cb07da23866bf3f6c23837d6d48d7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://67f57b884aca38efe00f51af0861f228f0930bf628df8282787be9519893af8b",
-				"dweb:/ipfs/QmR6P16Cs5bHkTRk3Rnh175obuBqnC57oq15xRbcFAakpQ"
+				"bzz-raw://937d561656eb4bfcf89d295a147b65c3edb22aa4bf8222771422d9a1ec2584af",
+				"dweb:/ipfs/QmX7m5mxtfWy6ijgS7bXoKUqbm2dVsphsiFS2NYKQqs2Bv"
+			]
+		},
+		"Operable.sol": {
+			"keccak256": "0xcb5e4cb1a0b48271844e84265c6146daca34f40ba1d8866a50143ca0d4c6fc29",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://335845ff0ee2c6909e9024ebe4ed65802b9336f66870153109139b5a319236ea",
+				"dweb:/ipfs/QmW37ZGA1cycpxWmjPhftGnX3WEsYK9L6NW7ntTzdTHNcY"
 			]
 		},
 		"Ownable.sol": {
-			"keccak256": "0x25719489834afdf3caa1864658c6f3806d3905494ec1c723edf213489b95b239",
+			"keccak256": "0xa03446e3ebdb135ff2255557ca62d813b0ff1a3a9fefbb5f0507232c176929d5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3bbf835c47b46222b1d5013e1c88a8b477f0a0f75a9bbcbbd9cd98cc471aa104",
-				"dweb:/ipfs/QmZXwY2sJbFzhNsXdJi6XnM9MynV9brkG8AXjkCdnJmMnR"
+				"bzz-raw://588571c87e942eb2f0d87b8734928e06ce23b3226d8a280cb28d11f316cc52a2",
+				"dweb:/ipfs/QmQzLawcycp6eRKZ2JFAFWmzwTHXNdvEN5ve9gESj6KmTT"
 			]
 		},
 		"Token.sol": {

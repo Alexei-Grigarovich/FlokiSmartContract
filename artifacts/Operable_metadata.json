@@ -6,17 +6,22 @@
 	"output": {
 		"abi": [
 			{
-				"anonymous": false,
-				"inputs": [
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "operator",
+				"outputs": [
 					{
-						"indexed": true,
 						"internalType": "address",
-						"name": "newOwner",
+						"name": "",
 						"type": "address"
 					}
 				],
-				"name": "OwnerUpdated",
-				"type": "event"
+				"stateMutability": "view",
+				"type": "function"
 			},
 			{
 				"inputs": [],
@@ -29,6 +34,19 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOperator",
+						"type": "address"
+					}
+				],
+				"name": "setOperator",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -58,7 +76,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Ownable.sol": "Ownable"
+			"Operable.sol": "Operable"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -72,12 +90,20 @@
 		"remappings": []
 	},
 	"sources": {
-		"Ownable.sol": {
-			"keccak256": "0x1681c400ce1fc4e672007daee4765645a8d8e81419930a7cc4ff69456f4b646f",
+		"Operable.sol": {
+			"keccak256": "0xcb5e4cb1a0b48271844e84265c6146daca34f40ba1d8866a50143ca0d4c6fc29",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://5e1f00c5239ccda0ac52cb2b80c277fe574498cee2721b59987e0818dc255217",
-				"dweb:/ipfs/QmcAh4LqrZQ3shNtMAHU8LcGbe1NWaGvCFSUS2pfRsggHF"
+				"bzz-raw://335845ff0ee2c6909e9024ebe4ed65802b9336f66870153109139b5a319236ea",
+				"dweb:/ipfs/QmW37ZGA1cycpxWmjPhftGnX3WEsYK9L6NW7ntTzdTHNcY"
+			]
+		},
+		"Ownable.sol": {
+			"keccak256": "0xa03446e3ebdb135ff2255557ca62d813b0ff1a3a9fefbb5f0507232c176929d5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://588571c87e942eb2f0d87b8734928e06ce23b3226d8a280cb28d11f316cc52a2",
+				"dweb:/ipfs/QmQzLawcycp6eRKZ2JFAFWmzwTHXNdvEN5ve9gESj6KmTT"
 			]
 		}
 	},
