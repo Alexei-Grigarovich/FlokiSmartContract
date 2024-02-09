@@ -3,7 +3,7 @@
 pragma solidity ^0.8.20;
 
 import "./Ownable.sol";
-import "./Token.sol";
+import "./TokenERC20.sol";
 
 abstract contract FeeReceiver is Ownable, Token
 {
@@ -14,6 +14,7 @@ abstract contract FeeReceiver is Ownable, Token
     constructor(address _feeRecipient)
     {
         feeRecipient = _feeRecipient;
+        feePercentage = 30;
     }
 
     function transferFee(uint totalAmount) internal 
@@ -27,5 +28,10 @@ abstract contract FeeReceiver is Ownable, Token
         require(newFeeRecipient != address(0), "Incorrect address");
 
         feeRecipient = newFeeRecipient;
+    }
+
+    function setFeePercentage(uint newFeePercentage) external onlyOwner
+    {
+        feePercentage = newFeePercentage;
     }
 }

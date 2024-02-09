@@ -22,8 +22,40 @@
 					{
 						"indexed": true,
 						"internalType": "address",
+						"name": "newOperator",
+						"type": "address"
+					}
+				],
+				"name": "OperatorUpdated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnerUpdated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
 						"name": "player",
 						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
 					}
 				],
 				"name": "Payed",
@@ -65,9 +97,28 @@
 						"type": "uint256"
 					}
 				],
-				"name": "addWithdrawalBalance",
+				"name": "addBalance",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "player",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "balance",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -91,6 +142,32 @@
 						"internalType": "address",
 						"name": "",
 						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getMinimalWithdrawalBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getPaymentCost",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "cost",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -138,14 +215,40 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
+						"internalType": "address",
+						"name": "player",
+						"type": "address"
 					}
 				],
+				"name": "paidOf",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "isPaid",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "pay",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "paymentCost",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -157,6 +260,19 @@
 					}
 				],
 				"name": "resetPayment",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "newFeePercentage",
+						"type": "uint256"
+					}
+				],
+				"name": "setFeePercentage",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -203,12 +319,12 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "newTokenAddress",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
 					}
 				],
-				"name": "setToken",
+				"name": "setPaymentCost",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -287,43 +403,43 @@
 			]
 		},
 		"FeeReceiver.sol": {
-			"keccak256": "0x273c34b1c98c7d925d3d85000ba3e59c3209ac6ae2399042c81beb4950a06bf1",
+			"keccak256": "0x28db14aecaf179a7a2eaa8dd462af51987de6fe247e487d27365324a63062bad",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://516db44f1598d8e7cd56f02a0eee0959f1ffa9d65dee63df3b3c91d177a8fd23",
-				"dweb:/ipfs/QmP6M5rmM7bwA7rtGkB3nAxXeTMe5iDRuyoSLn3TC7jrsn"
+				"bzz-raw://8ca693eb9a926df0ad28a5ed713f7166321f0d5b0a72139a34794af7ef5970dd",
+				"dweb:/ipfs/Qmc6dDa8LvJrtdouxiNJSBR21YmijBmYQNeG3mYfxpMmJa"
 			]
 		},
 		"Flokicyberpunk.sol": {
-			"keccak256": "0x0bbfa56ccbae5344f617e83ef7a40fc7f70cb07da23866bf3f6c23837d6d48d7",
+			"keccak256": "0x11efc0653b8cd0344abc82f7b9d1518b57494f3ad80d80d18e48df11fc1c3819",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://937d561656eb4bfcf89d295a147b65c3edb22aa4bf8222771422d9a1ec2584af",
-				"dweb:/ipfs/QmX7m5mxtfWy6ijgS7bXoKUqbm2dVsphsiFS2NYKQqs2Bv"
+				"bzz-raw://399f197a4d252f6afbcf8b7c8e19da580864d8683a8ee477d6ac1482667bf4e3",
+				"dweb:/ipfs/QmUFQKy3zoTeYNDqTqSGU1mR6eqCNwuoU538Qu4JksbUzT"
 			]
 		},
 		"Operable.sol": {
-			"keccak256": "0xcb5e4cb1a0b48271844e84265c6146daca34f40ba1d8866a50143ca0d4c6fc29",
+			"keccak256": "0xbd80b463d676c91523e7589d9619b4268ab70fbfdaef7972168f7a96d52cdc23",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://335845ff0ee2c6909e9024ebe4ed65802b9336f66870153109139b5a319236ea",
-				"dweb:/ipfs/QmW37ZGA1cycpxWmjPhftGnX3WEsYK9L6NW7ntTzdTHNcY"
+				"bzz-raw://c8f4faf4348bd6c0d6fea54b6ec083daf03791d0ed27e5921bd4339cfe09b625",
+				"dweb:/ipfs/Qme5J6Vp2EZSehFWwFD1J99tUBr1qgvan4aXvnC8mC6kb3"
 			]
 		},
 		"Ownable.sol": {
-			"keccak256": "0xa03446e3ebdb135ff2255557ca62d813b0ff1a3a9fefbb5f0507232c176929d5",
+			"keccak256": "0x1681c400ce1fc4e672007daee4765645a8d8e81419930a7cc4ff69456f4b646f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://588571c87e942eb2f0d87b8734928e06ce23b3226d8a280cb28d11f316cc52a2",
-				"dweb:/ipfs/QmQzLawcycp6eRKZ2JFAFWmzwTHXNdvEN5ve9gESj6KmTT"
+				"bzz-raw://5e1f00c5239ccda0ac52cb2b80c277fe574498cee2721b59987e0818dc255217",
+				"dweb:/ipfs/QmcAh4LqrZQ3shNtMAHU8LcGbe1NWaGvCFSUS2pfRsggHF"
 			]
 		},
-		"Token.sol": {
-			"keccak256": "0x9d78af519ec7f8005ce7005b0cc982207ea2df9d04751a380a7b6a382add01ed",
+		"TokenERC20.sol": {
+			"keccak256": "0xf489789f036f265e2430f6be1d4517cf5f27def16ad8bafed2640f72fb84d7f0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://fe3cf897753f9830bdd33edab03d00ca05338be00a5cd66bc2432f80a5b4238b",
-				"dweb:/ipfs/QmaA19Z2MA2joxUDwKeMzVga7BFS5Sr5Ac1kaEqkckgqLJ"
+				"bzz-raw://5e4c03660f3408f7ebf95f73408c3fe88a0388a2bfb30901d981c9c5069c1b80",
+				"dweb:/ipfs/QmWixS9GfhDpSHPsk44nqg95S6cfDApkBtDVYDBNTVYmzX"
 			]
 		}
 	},

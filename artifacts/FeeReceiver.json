@@ -52,13 +52,26 @@
 			"feePercentage()": "a001ecdd",
 			"feeRecipient()": "46904840",
 			"owner()": "8da5cb5b",
+			"setFeePercentage(uint256)": "ae06c1b7",
 			"setFeeRecipient(address)": "e74b981b",
-			"setToken(address)": "144fa6d7",
 			"token()": "fc0c546a",
 			"transferOwnership(address)": "f2fde38b"
 		}
 	},
 	"abi": [
+		{
+			"anonymous": false,
+			"inputs": [
+				{
+					"indexed": true,
+					"internalType": "address",
+					"name": "newOwner",
+					"type": "address"
+				}
+			],
+			"name": "OwnerUpdated",
+			"type": "event"
+		},
 		{
 			"inputs": [],
 			"name": "feePercentage",
@@ -101,12 +114,12 @@
 		{
 			"inputs": [
 				{
-					"internalType": "address",
-					"name": "newFeeRecipient",
-					"type": "address"
+					"internalType": "uint256",
+					"name": "newFeePercentage",
+					"type": "uint256"
 				}
 			],
-			"name": "setFeeRecipient",
+			"name": "setFeePercentage",
 			"outputs": [],
 			"stateMutability": "nonpayable",
 			"type": "function"
@@ -115,11 +128,11 @@
 			"inputs": [
 				{
 					"internalType": "address",
-					"name": "newTokenAddress",
+					"name": "newFeeRecipient",
 					"type": "address"
 				}
 			],
-			"name": "setToken",
+			"name": "setFeeRecipient",
 			"outputs": [],
 			"stateMutability": "nonpayable",
 			"type": "function"
