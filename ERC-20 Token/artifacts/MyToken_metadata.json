@@ -424,7 +424,7 @@
 		"compilationTarget": {
 			"ERC-20 Token/MyToken.sol": "MyToken"
 		},
-		"evmVersion": "london",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"

@@ -4,7 +4,7 @@ pragma solidity ^0.8.20;
 
 import "./Ownable.sol";
 import "./Operable.sol";
-import "./TokenERC20.sol";
+import "./TokenBEP20.sol";
 import "./FeeReceiver.sol";
 
 contract Flokicyberpunk is Ownable, Operable, Token, FeeReceiver

@@ -3,7 +3,7 @@
 pragma solidity ^0.8.20;
 
 import "./Ownable.sol";
-import "./TokenERC20.sol";
+import "./TokenBEP20.sol";
 
 abstract contract FeeReceiver is Ownable, Token
 {

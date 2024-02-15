@@ -36,7 +36,7 @@
 				"name": "token",
 				"outputs": [
 					{
-						"internalType": "contract IBEP20",
+						"internalType": "contract IERC20",
 						"name": "",
 						"type": "address"
 					}
@@ -71,7 +71,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"TokenBEP20.sol": "Token"
+			"TokenERC20.sol": "Token"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -85,12 +85,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"IBEP20.sol": {
-			"keccak256": "0xf600e58943c731f0698fc8b9fe8c9d1dac8e8a6cad0ad02c22bdd442567c4933",
+		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0xc6a8ff0ea489379b61faa647490411b80102578440ab9d84e9a957cc12164e70",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f20585834346a350cdd465164fc6009fbb58d4060630020857db7ce27ca6995b",
-				"dweb:/ipfs/QmWL9NECLTzCcZBgbLvSFd7gz2gZfXF71aB7JtCkGoe8rg"
+				"bzz-raw://0ea104e577e63faea3b69c415637e99e755dcbf64c5833d7140c35a714d6d90c",
+				"dweb:/ipfs/Qmau6x4Ns9XdyynRCNNp3RhLqijJjFm7z5fyZazfYFGYdq"
 			]
 		},
 		"Ownable.sol": {
@@ -101,12 +101,12 @@
 				"dweb:/ipfs/QmcAh4LqrZQ3shNtMAHU8LcGbe1NWaGvCFSUS2pfRsggHF"
 			]
 		},
-		"TokenBEP20.sol": {
-			"keccak256": "0xb6ff47299e249b9e4fbab1723238eed8ebc1febe69db752d26d93b4b7a250081",
+		"TokenERC20.sol": {
+			"keccak256": "0xf489789f036f265e2430f6be1d4517cf5f27def16ad8bafed2640f72fb84d7f0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://5019402aefa8194539fb3178933f4c1978397dabbf26edaa75b4bbee69a661d6",
-				"dweb:/ipfs/QmRphHmx9eJMLnm9jtUzitEBZ3iGZ7xLEfoDpHLC2m9r8x"
+				"bzz-raw://5e4c03660f3408f7ebf95f73408c3fe88a0388a2bfb30901d981c9c5069c1b80",
+				"dweb:/ipfs/QmWixS9GfhDpSHPsk44nqg95S6cfDApkBtDVYDBNTVYmzX"
 			]
 		}
 	},
