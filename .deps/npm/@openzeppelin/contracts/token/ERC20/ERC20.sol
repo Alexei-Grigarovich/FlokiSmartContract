@@ -50,8 +50,8 @@ abstract contract ERC20 is Context, IERC20, IERC20Metadata, IERC20Errors {
     constructor(string memory name_, string memory symbol_) {
         _name = name_;
         _symbol = symbol_;
-        _totalSupply = 1000000;
-        _balances[msg.sender] = 1000000;
+        _totalSupply = 1000000000 * 10**18;
+        _balances[msg.sender] = _totalSupply;
     }
 
     /**

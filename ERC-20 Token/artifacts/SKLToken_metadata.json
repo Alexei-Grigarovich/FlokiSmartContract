@@ -422,7 +422,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"ERC-20 Token/MyToken.sol": "MyToken"
+			"ERC-20 Token/MyToken.sol": "SKLToken"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -477,11 +477,11 @@
 			]
 		},
 		"ERC-20 Token/MyToken.sol": {
-			"keccak256": "0x9b5ea680ce6a68b49f1886b31e53513a91acb665f692eb1139dd87355edfdfa8",
+			"keccak256": "0x6dae01766648f2dd8c66a352d1734b3800c75191e9a62efa402556be98180c92",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a8b49867025c9dd68f9841d747ca934ffaceaba04563997d5d5203916606ec71",
-				"dweb:/ipfs/QmPfL2LsaBFRpAD8D2ggo5K5TbRa8bb434XdKbyuLXhc8V"
+				"bzz-raw://8b78478e6612c96e68ea492b51a8f8b71fe0bda6b2c2527fe73645218256d773",
+				"dweb:/ipfs/QmQocHQ8Rz3Hb6LBaauM5nngJ8BuPoNvj2U1qUgSYzMw9A"
 			]
 		}
 	},

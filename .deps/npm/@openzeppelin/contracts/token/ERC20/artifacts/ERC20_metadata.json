@@ -444,11 +444,11 @@
 			]
 		},
 		".deps/npm/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
-			"keccak256": "0xbbc8732d3e3af845f6abc09fa61abf5572a808126f02c4f19dc67a34bb4ae44c",
+			"keccak256": "0x7f4b2142515471bfdf57e81ffec5fbc5b96c6015c293bb19ea8a4ff1a33abd9f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d792c4af5b2e47e7369e372a2ef778049543115c330a69cc0a9ba81e3f9aa488",
-				"dweb:/ipfs/QmSesNsJEh8Gu7jybp25oKRrJKhh1xVUtg8jSNyZA9uL3o"
+				"bzz-raw://add917dc2a8f9265bb62d30d3b72e999ebaa97a263ed382ef791b9f4b148a05e",
+				"dweb:/ipfs/QmXcS57CktAApUgXF23vMveBJThwuBY2gkL81NZGYNXT1g"
 			]
 		},
 		".deps/npm/@openzeppelin/contracts/token/ERC20/IERC20.sol": {

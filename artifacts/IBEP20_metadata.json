@@ -295,7 +295,7 @@
 		"compilationTarget": {
 			"IBEP20.sol": "IBEP20"
 		},
-		"evmVersion": "london",
+		"evmVersion": "shanghai",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
