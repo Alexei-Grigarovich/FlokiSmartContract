@@ -4,7 +4,7 @@ pragma solidity ^0.8.20;
 
 import "./Ownable.sol";
 import "./Operable.sol";
-import "./TokenBEP20.sol";
+import "./TokenERC20.sol";
 import "./FeeReceiver.sol";
 
 contract Flokicyberpunk is Ownable, Operable, Token, FeeReceiver
@@ -22,7 +22,7 @@ contract Flokicyberpunk is Ownable, Operable, Token, FeeReceiver
     receive() external payable { }
     fallback() external payable { }
 
-    event Payed(address indexed player, uint amount);
+    event Paid(address indexed player, uint amount);
     event Withdrawn(address indexed player, uint amount);
 
     function pay() external 
@@ -33,7 +33,7 @@ contract Flokicyberpunk is Ownable, Operable, Token, FeeReceiver
         players[msg.sender].isPaid = true;
         transferFee(paymentCost);
 
-        emit Payed(msg.sender, paymentCost);
+        emit Paid(msg.sender, paymentCost);
     }
 
     function withdraw() external 
